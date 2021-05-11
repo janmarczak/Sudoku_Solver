@@ -48,6 +48,10 @@ public:
         return true;
     }
 
+    virtual void write(ostream & o) const override {
+        // nothing
+    }
+
 
     virtual vector<unique_ptr<Searchable>> successors() const override {
         vector<unique_ptr<Searchable>> successorsToReturn;
